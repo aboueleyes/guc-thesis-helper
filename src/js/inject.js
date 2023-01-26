@@ -170,6 +170,7 @@ const addToSortableList = node => {
 };
 
 selectionListClone.addEventListener("change", event => {
+  event.preventDefault();
   const node = event.target.selectedOptions[0];
   addToSortableList(node);
 });
